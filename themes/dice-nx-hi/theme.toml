@@ -1,0 +1,16 @@
+name = 'DICE-NX-hi'
+license = 'BSD'
+licenselink = 'https://opensource.org/license/bsd-3-clause'
+description = 'DICE-NX high tech theme'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/dice-nx/dice-nx-website/themes/dice-nx-hi'
+
+# Taxonomy terms
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+# If the theme has a single author
+[author]
+  name = 'Richard Downer'
+  homepage = 'https://github.com/dice-nx'

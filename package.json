@@ -1,0 +1,22 @@
+{
+  "name": "dice-nx-website",
+  "version": "1.0.0",
+  "description": "DICE-NX project website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dice-nx/dice-nx-website.git"
+  },
+  "author": "Richard Downer",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/dice-nx/dice-nx-website/issues"
+  },
+  "homepage": "https://dice-nx.dev",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

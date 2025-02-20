@@ -1,0 +1,5 @@
+{{ .Page.Store.Add "faqSectionCounter" 1 }}
+
+<div class="accordion mb-4" id='faqSection{{ .Page.Store.Get "faqSectionCounter" }}'>
+    {{ .Inner }}
+</div>

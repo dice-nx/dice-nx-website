@@ -1,0 +1,17 @@
+$body-bg: #cccccc;
+$body-color: black;
+$body-emphasis-color: black;
+$primary: #6D88B0; // glaucous
+$secondary: #888888;
+$danger: #F06542; // tomato
+$warning: #FFD15C; // sunglow
+$info: #AEA2E2; // wisteria
+$success: #C2FFDD; // tea green
+
+$font-family-sans-serif: "Titillium Web", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif: "Bitter", "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base: $font-family-serif !default;
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "styles.scss";

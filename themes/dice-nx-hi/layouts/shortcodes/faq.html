@@ -1,0 +1,18 @@
+{{ .Page.Store.Add "faqCounter" 1 }}
+
+<div class="accordion-item">
+    <p class="accordion-header">
+        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+            data-bs-target='#collapse{{ .Page.Store.Get "faqCounter" }}' aria-expanded="false"
+            aria-controls='collapse{{ .Page.Store.Get "faqCounter" }}'>
+            {{ .Get 0 }}
+        </button>
+    </p>
+
+    <div id='collapse{{ .Page.Store.Get "faqCounter" }}' class="accordion-collapse collapse"
+        data-bs-parent='#faqSection{{ .Page.Store.Get "faqSectionCounter" }}'>
+        <div class="accordion-body">
+            {{ .Inner | .Page.RenderString }}
+        </div>
+    </div>
+</div>

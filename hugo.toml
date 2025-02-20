@@ -1,0 +1,19 @@
+baseURL = 'https://dice-nx.dev/'
+languageCode = 'en-us'
+title = 'DICE-NX'
+theme = "dice-nx-hi"
+relativeURLS = true
+
+[permalinks]
+posts = "/news/:year/:title/"
+
+[menus]
+  [[menus.main]]
+    name = 'News'
+    pageRef = '/posts/'  # this is referring to the *filesystem* path. When rendered, it will be /news/
+    weight = 40
+
+[module]
+    [[module.mounts]]
+        source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        target = "assets/js/bootstrap.bundle.min.js"
