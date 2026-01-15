@@ -2,7 +2,7 @@
 draft = true
 title = 'FAQ'
 menus = 'main'
-weight = 30
+weight = 40
 layout = 'content'
 +++
 
@@ -51,18 +51,24 @@ am happy to comply with his wish that this fork is distinguished from the origin
 
 {{< faq "What do I need before I get started with DICE-NX?" >}}
 To use the packaged binary release of DICE-NX, you will need an Amiga (either real or emulated).
-Your Amiga should have a hard drive, at least 2MiB of RAM, and AmigaOS 3.2. You must also have the
-AmigaOS 3.2 NDK to hand, either from the AmigaOS 3.2 CD-ROM or - preferably - the latest version
-downloaded from the Hyperion Entertainment website (but note that you must be a registered owner
-of AmigaOS 3.2 to access the download section of that website).
+Your Amiga should have a hard drive and at least 2MiB of RAM.
+
+DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using
+AmigaOS 3.2, including use of the AmigaOS 3.2 NDK. DICE-nx does theoretically support earlier
+versions of AmigaOS but this has not been heavily tested, so you may experience difficulties with
+other versions of AmigaOS.
+
+You must also have an AmigaOS NDK. Again, 3.2 has seen the most testing with DICE-nx so although
+earlier NDKs are supported, I recommend using 3.2. NDK 3.2 can be freely downloaded from Aminet,
+making it the easiest NDK to legally obtain at this time, and you can still target earlier AmigaOS
+releases even if you are using NDK 3.2.
 {{< /faq >}}
 
 {{< faq "Do I need to buy AmigaOS 3.2?" >}}
-Yes. DICE-NX requires AmigaOS 3.2 NDK, which currently can only be legally obtained by purchasing
-AmigaOS 3.2 from Hyperion Entertainment.
-
-I realise that this is a barrier for many people, and I intend to allow DICE-NX to once again use
-the NDKs from earlier AmigaOS releases, when development time permits me.
+No. DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using
+AmigaOS 3.2, including use of the AmigaOS 3.2 NDK. DICE-nx does theoretically support earlier
+versions of AmigaOS but this has not been heavily tested, so you may experience difficulties with
+other versions of AmigaOS.
 {{< /faq >}}
 
 {{< /faq-section >}}
@@ -101,6 +107,59 @@ multiple simultaneous NDK versions, but it was faster to support AmigaOS 3.2 by 
 compatibility for the earlier NDKs.
 
 I hope to be able to restore support for NDK versions 1.3, 2.0, 3.0 and 3.1 in the future.
+{{< /faq >}}
+
+{{< faq "What are inline library calls?" >}}
+Inline library calls are one possible implementation of how programs written in C can make calls to
+AmigaOS libraries.
+
+In C, we want to be able to call AmigaOS libraries (API calls, in modern terms) in as simple a way
+as possible. They are expressed in the OS documentation as something like making a function call:
+
+```c
+struct Library = OpenLibrary("mylib.library", 0L);
+```
+
+In practice, the AmigaOS interface is not a C function call. The traditional method of calling
+AmigaOS relies on a file called `amiga.lib` which is part of the AmigaOS NDK. This linker library
+contains a function that can be invoked from C for every AmigaOS API call; each implementation is
+a handful of machine code instructions that invokes the equivalent AmigaOS API call, adapting the OS
+interface to C language conventions.
+
+This works quite well, but it is inefficient. The AmigaOS interface is designed to be fast - it
+can be invoked with just a few machine code instructions - but the C function call conventions are
+slower.
+
+Inline library calls solve this problem. When enabled and supported, DICE-nx can directly generate
+the machine language instructions to invoke the AmigaOS API. This speeds up OS calls and reduces the
+dependency on amiga.lib.
+{{< /faq >}}
+
+{{< faq "How do I use inline library calls?" >}}
+The are two things you need to do. Firstly, when invoking the `dcc` command, pass the `-mi` and
+`-proto` arguments. This instructions DICE-nx to make inline library calls whenever possible, and
+to check that all library calls are correct according to the function prototypes.
+
+Secondly, DICE-nx needs additional information about the AmigaOS API. These are supplied in special
+header files in the AmigaOS NDK. For each AmigaOS library that you will be using, you must use
+an `#include` directive using this naming convention:
+
+```c
+/* support inline library calls for "exec.library" */
+#include <proto/exec.h>
+/* support inline library calls for "graphics.library" */
+#include <proto/graphics.h>
+/* support inline library calls for "intuition.library" */
+#include <proto/intuition.h>
+```
+
+These include directives will bring in C-style function prototypes so that library invocations are
+checked for type correctness, and brings in the extra information (DICE-nx-specific `#pragma`
+directives) that allows DICE-nx to construct the correct machine code instructions to make the
+library call.
+
+If you include the header from `proto`, you do not need to include any headers from `clib`,
+`pragma`, or `pragmas`. Any AmigaOS includes that begin with those directories can be removed.
 {{< /faq >}}
 
 {{< /faq-section >}}

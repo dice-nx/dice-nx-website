@@ -1,8 +1,7 @@
 +++
 draft = true
-title = 'Get Started'
-menu = 'main'
-weight = 30
+title = 'About DICE-nx'
+menu = { main = { name = "About", weight = 20 } }
 layout = 'content'
 +++
 

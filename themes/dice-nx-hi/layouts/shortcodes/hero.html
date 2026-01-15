@@ -2,8 +2,8 @@
     <div class="col-lg-8 mx-auto">
         <p class="display-6 mb-5 text-body-emphasis">{{ .Inner }}</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="{{ .Get "left-button-link" }}" class="btn btn-primary btn-lg px-4 gap-3">{{ .Get "left-button-caption" }}</a>
-            <a href="{{ .Get "right-button-link" }}" class="btn btn-secondary btn-lg px-4">{{ .Get "right-button-caption" }}</a>
+            <a href="{{ relref . (.Get "left-button-link") }}" class="btn btn-primary btn-lg px-4 gap-3">{{ .Get "left-button-caption" }}</a>
+            <a href="{{ relref . (.Get "right-button-link") }}" class="btn btn-secondary btn-lg px-4">{{ .Get "right-button-caption" }}</a>
         </div>
     </div>
 </div>

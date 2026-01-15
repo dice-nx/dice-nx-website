@@ -11,7 +11,7 @@ posts = "/news/:year/:title/"
   [[menus.main]]
     name = 'News'
     pageRef = '/posts/'  # this is referring to the *filesystem* path. When rendered, it will be /news/
-    weight = 40
+    weight = 50
 
 [module]
     [[module.mounts]]

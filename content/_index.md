@@ -2,11 +2,11 @@
 date = '2024-12-02T22:24:28Z'
 draft = true
 title = 'Home'
-menus = 'main'
+menu = 'main'
 weight = 10
 +++
 
-{{< hero left-button-caption="Get Started" left-button-link="get-started.html" right-button-caption="Learn More" right-button-link="about.html" >}}
+{{< hero left-button-caption="Get Started" left-button-link="get-started.md" right-button-caption="Learn More" right-button-link="about.md" >}}
 DICE-NX is a C&nbsp;compiler suite for Commodore&nbsp;Amiga computers and for Motorola&nbsp;68000-based embedded&nbsp;systems.
 {{< /hero >}}
 
