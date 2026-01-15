@@ -14,33 +14,27 @@ DICE-NX is a C&nbsp;compiler suite for Commodore&nbsp;Amiga computers and for Mo
 
 {{< feature-row >}}
 
-{{< feature title="Comprehensive" >}}
+{{< feature title="Comprehensive" icon="clipboard-check" >}}
 All the tools needed to build Amiga executables - the C compiler itself, as well as an assembler, linker and numerous other support tools.
 {{< /feature >}}
-{{< feature title="Built for Amiga" >}}
+{{< feature title="Built for Amiga" icon="heart" >}}
 Several Amiga-specific features, such as automatic opening of the common Amiga OS libraries, easy support for ARexx, and more.
 {{< /feature >}}
-{{< feature title="Updated" >}}
+{{< feature title="Updated" icon="calendar-check" >}}
 Supports the AmigaOS 3.2 operating system and developer kit.
-{{< /feature >}}
-{{< feature title="Proven" >}}
-A long-standing and proven tool in the Amiga developer ecosystem, dating back to the 1990s!
 {{< /feature >}}
 
 {{< /feature-row >}}
 
 {{< feature-row >}}
 
-{{< feature title="Open Source" >}}
+{{< feature title="Open Source" icon="pencil-square" >}}
 Source code available on GitHub under the BSD License. Pull requests welcome!
 {{< /feature >}}
-{{< feature title="Native" >}}
-Built on the Amiga for the Amiga.
+{{< feature title="Proven" icon="patch-check" >}}
+A long-standing and proven tool in the Amiga developer ecosystem, dating back to the 1990s!
 {{< /feature >}}
-{{< feature title="Documented" >}}
-Includes a comprehensive user manual.
-{{< /feature >}}
-{{< feature title="Part of the ecosystem" >}}
+{{< feature title="Part of the ecosystem" icon="people-fill" >}}
 Develop with the large ecosystem of PD and 3rd party libraries, including MUI, ReqTools, and many more!
 {{< /feature >}}
 

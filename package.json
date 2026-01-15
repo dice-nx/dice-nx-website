@@ -17,6 +17,7 @@
   },
   "homepage": "https://dice-nx.dev",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.13.1"
   }
 }
