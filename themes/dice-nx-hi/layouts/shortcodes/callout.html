@@ -1,0 +1,17 @@
+<div class="card text-bg-{{ .Get 0 }} mb-3 mx-5">
+  <div class="card-body">
+    <div class="d-flex align-items-center">
+      <div class="me-3">
+        <svg class="bi" width="32" height="32" fill="currentColor" aria-hidden="true">
+          <use xlink:href="{{ "/bootstrap-icons.svg#" | relURL }}{{ if eq (.Get 0) "info" }}info-circle{{ else if eq (.Get 0) "warning" }}exclamation-triangle{{ else if eq (.Get 0) "danger" }}sign-stop{{ end }}"/>
+        </svg>
+      </div>
+      <div>
+        <div class="h5 card-title">
+          <!-- ...existing code for title if needed... -->
+        </div>
+        <p class="card-text">{{ .Inner | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</div>
