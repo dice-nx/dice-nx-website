@@ -15,6 +15,44 @@ DICE-NX is currently maintained by [Richard Downer](https://github.com/rdowner).
 will join in the effort to improve DICE-NX for the modern retrocomputing community.
 {{< /faq >}}
 
+{{< faq "What is the current version of DICE-nx?" >}}
+DICE-nx is currently at version 3.20.0.
+
+So far this is the only release of DICE-nx.
+{{< /faq >}}
+
+{{< faq "Why did DICE-nx start version numbering at 3.20.0?" >}}
+Ideally, DICE-nx would have continued from the next version number after the last DICE release.
+Unfortunately, it's not clear what last DICE version number *was*.
+
+The last release of the commercial DICE product was 3.15. After this, there was the first
+open-source (but not BSD-licensed) release of the DICE source code around 1997. This contained some
+updates that had not previously been part of a binary release, so a developer named Richard Drummond
+took that source code release and made a binary release he called 3.16, in 1998.
+
+On Matt Dillon's own website, his releases of DICE were labelled 1.14 and 1.15 (1.15 being the
+relicense to BSD License, in 2023). Both contain new updates since the 3.15/3.16 time frame. The
+reason for the version number reset is unknown, and as the source code history is largely lost, we
+don't have a clear idea what happened between 1997 and 2023.
+
+There is also a slight unknown in that semantic versioning wouldn't become a thing until around
+2009. Prior to this, there were a few conventions but no single established best practice. In the
+Amiga world in the 1990s, a version like "3.15" would typically be interpreted as either:
+
+* Semantic versioning style - the 15th minor release after the 3rd major release
+* As a decimal number - where 3.15 is sometime after 3.1 but before 3.2
+
+I took the decision to make the first DICE-nx version 3.20, and to commit to semantic versioning
+from this point on. I chose this for these reasons:
+
+* I chose to ignore the "reset" versions and continue the version numbering from the releases
+  available on Aminet. To continue with 1.x-series releases would cause confusion, as people would
+  assume that 3.16 from Aminet is newer.
+* No matter if you are using semantic or decimal style versions, 3.20 is later than any known DICE
+  release.
+{{< /faq >}}
+
+
 {{< faq "What is the origins of DICE-NX?">}}
 DICE-NX is a continuation of DICE, a commercial C compiler written by Matt Dillon in the 1990s.
 In the late 90s, Matt ceased development of DICE and made it available under a "source available"
