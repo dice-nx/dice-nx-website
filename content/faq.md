@@ -91,22 +91,15 @@ am happy to comply with his wish that this fork is distinguished from the origin
 To use the packaged binary release of DICE-NX, you will need an Amiga (either real or emulated).
 Your Amiga should have a hard drive and at least 2MiB of RAM.
 
-DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using
-AmigaOS 3.2, including use of the AmigaOS 3.2 NDK. DICE-nx does theoretically support earlier
-versions of AmigaOS but this has not been heavily tested, so you may experience difficulties with
-other versions of AmigaOS.
+AmigaOS 2.04 or later is recommended. DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using AmigaOS 3.2. DICE did support AmigaOS 1.3 but DICE-nx has not been tested on this version, so consider that an experts-only option.
 
-You must also have an AmigaOS NDK. Again, 3.2 has seen the most testing with DICE-nx so although
-earlier NDKs are supported, I recommend using 3.2. NDK 3.2 can be freely downloaded from Aminet,
+You must also have an AmigaOS NDK 3.2. NDK 3.2 can be freely downloaded from Aminet,
 making it the easiest NDK to legally obtain at this time, and you can still target earlier AmigaOS
 releases even if you are using NDK 3.2.
 {{< /faq >}}
 
 {{< faq "Do I need to buy AmigaOS 3.2?" >}}
-No. DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using
-AmigaOS 3.2, including use of the AmigaOS 3.2 NDK. DICE-nx does theoretically support earlier
-versions of AmigaOS but this has not been heavily tested, so you may experience difficulties with
-other versions of AmigaOS.
+No. DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using AmigaOS 3.2, but it does work on earlier AmigaOS versions too.
 {{< /faq >}}
 
 {{< /faq-section >}}
@@ -140,11 +133,10 @@ architecture.
 {{< /faq >}}
 
 {{< faq "Can I use AmigaOS NDKs other than 3.2?">}}
-DICE-NX currently only supports NDK 3.2. This is somewhat of a backwards step as DICE supported
-multiple simultaneous NDK versions, but it was faster to support AmigaOS 3.2 by dropping
+DICE-NX currently only officially supports NDK 3.2. This is somewhat of a backwards step as DICE supported multiple simultaneous NDK versions, but it was faster to support AmigaOS 3.2 by dropping
 compatibility for the earlier NDKs.
 
-I hope to be able to restore support for NDK versions 1.3, 2.0, 3.0 and 3.1 in the future.
+I hope to be able to restore official support for NDK versions 1.3, 2.0, 3.0 and 3.1 in the future. In the mean time, you may still be able to use the earlier NDKs if you install them manually, but consider that an experts-only option.
 {{< /faq >}}
 
 {{< faq "What are inline library calls?" >}}

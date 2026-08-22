@@ -25,7 +25,7 @@ To install and run DICE-nx, you will need:
 Either a real Amiga or an emulator such as WinUAE or Amiberry.
 {{< /grid-card >}}
 
-{{< grid-card "memory" "4 MiB of RAM" >}}
+{{< grid-card "memory" "2 MiB of RAM" >}}
 More memory beyond this can boost the performance of DICE-nx.
 {{< /grid-card >}}
 
@@ -35,12 +35,12 @@ More memory beyond this can boost the performance of DICE-nx.
 
 {{< grid-row >}}
 
-{{< grid-card "floppy2-fill" "AmigaOS 2.0 or later" >}}
+{{< grid-card "floppy2-fill" "AmigaOS 2.04 or later" >}}
 AmigaOS 3.2 is recommended. AmigaOS 1.3 may be possible for expert users...
 {{< /grid-card >}}
 
 {{< grid-card "boxes" "Native Developer Kit" >}}
-An AmigaOS NDK that matches your OS version, and optionally for other OS versions too.
+AmigaOS NDK 3.2, available on Aminet as [NDK3.2](https://aminet.net/package/dev/misc/NDK3.2)
 {{< /grid-card >}}
 
 {{< grid-card "box-seam" "Dependent packages" >}}
