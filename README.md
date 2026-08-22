@@ -4,6 +4,9 @@ DICE-NX website
 Initial setup:
 
 ```bash
+asdf plugin add npm
+asdf plugin add hugo
+asdf install
 npm install --include=dev
 ```
 
