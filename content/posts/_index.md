@@ -5,4 +5,4 @@ title = 'News'
 url = "/news"
 +++
 
-News releases from the DICE-NX project:
+News releases from the DICE-nx project:

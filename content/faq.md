@@ -10,9 +10,9 @@ layout = 'content'
 
 {{< faq-section >}}
 
-{{< faq "Who is maintaining DICE-NX?">}}
-DICE-NX is currently maintained by [Richard Downer](https://github.com/rdowner). I hope that others
-will join in the effort to improve DICE-NX for the modern retrocomputing community.
+{{< faq "Who is maintaining DICE-nx?">}}
+DICE-nx is currently maintained by [Richard Downer](https://github.com/rdowner). I hope that others
+will join in the effort to improve DICE-nx for the modern retrocomputing community.
 {{< /faq >}}
 
 {{< faq "What is the current version of DICE-nx?" >}}
@@ -53,8 +53,8 @@ from this point on. I chose this for these reasons:
 {{< /faq >}}
 
 
-{{< faq "What is the origins of DICE-NX?">}}
-DICE-NX is a continuation of DICE, a commercial C compiler written by Matt Dillon in the 1990s.
+{{< faq "What is the origins of DICE-nx?">}}
+DICE-nx is a continuation of DICE, a commercial C compiler written by Matt Dillon in the 1990s.
 In the late 90s, Matt ceased development of DICE and made it available under a "source available"
 style license - one where the source code is available but some restrictions are applied so it does
 not fall under OSI's open source definition - in DICE's case, the license prohibited commercial
@@ -64,19 +64,19 @@ Matt did a small amount of development on DICE between then and 2023, mostly foc
 it to be hosted on BSD instead of Amiga, supporting 64-bit host OSes, for the purpose of generating
 ROMable code for 68000 embedded systems.
 
-Then, in October 2023, Matt relicensed DICE to BSD, and I forked it to create DICE-NX.
+Then, in October 2023, Matt relicensed DICE to BSD, and I forked it to create DICE-nx.
 {{< /faq >}}
 
-{{< faq "What is the relationship between DICE-NX and DICE?" >}}
-DICE-NX is a fork of DICE, as of DICE's relicensing to BSD in October 2023. The original DICE is
+{{< faq "What is the relationship between DICE-nx and DICE?" >}}
+DICE-nx is a fork of DICE, as of DICE's relicensing to BSD in October 2023. The original DICE is
 unlikely to see further activity as it's author, Matt Dillon, has moved on to other projects.
-Meanwhile DICE-NX is re-starting development on DICE. (It's also entirely possible that other
-people may fork DICE and take it in a different direction to both the original and DICE-NX.)
+Meanwhile DICE-nx is re-starting development on DICE. (It's also entirely possible that other
+people may fork DICE and take it in a different direction to both the original and DICE-nx.)
 
 There is no ongoing relationship between the two projects.
 {{< /faq >}}
 
-{{< faq "Why did DICE-NX change the name from DICE?" >}}
+{{< faq "Why did DICE-nx change the name from DICE?" >}}
 This was done at the request of Matt Dillon, developer and owner of the original version of DICE. I
 am happy to comply with his wish that this fork is distinguished from the original.
 {{< /faq >}}
@@ -87,8 +87,8 @@ am happy to comply with his wish that this fork is distinguished from the origin
 
 {{< faq-section >}}
 
-{{< faq "What do I need before I get started with DICE-NX?" >}}
-To use the packaged binary release of DICE-NX, you will need an Amiga (either real or emulated).
+{{< faq "What do I need before I get started with DICE-nx?" >}}
+To use the packaged binary release of DICE-nx, you will need an Amiga (either real or emulated).
 Your Amiga should have a hard drive and at least 2MiB of RAM.
 
 AmigaOS 2.04 or later is recommended. DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier time if you are using AmigaOS 3.2. DICE did support AmigaOS 1.3 but DICE-nx has not been tested on this version, so consider that an experts-only option.
@@ -109,8 +109,8 @@ No. DICE-nx is developed using AmigaOS 3.2 and you will likely have an easier ti
 {{< faq-section >}}
 
 {{< faq "Can I build applications for AmigaOS 3.2?">}}
-Yes, DICE-NX supports building AmigaOS 3.2 applications. Supporting the newest AmigaOS releases is
-a key goal for DICE-NX.
+Yes, DICE-nx supports building AmigaOS 3.2 applications. Supporting the newest AmigaOS releases is
+a key goal for DICE-nx.
 {{< /faq >}}
 
 {{< faq "Can I build applications for earlier AmigaOS releases?" >}}
@@ -121,19 +121,19 @@ and make sure that you degrade gracefully instead of causing a system crash.
 {{< /faq >}}
 
 {{< faq "Can I build applications for AmigaOS 3.5 and 3.9?" >}}
-AmigaOS 3.5 and 3.9 is not officially supported by DICE-NX. They are backwards compatible with
+AmigaOS 3.5 and 3.9 is not officially supported by DICE-nx. They are backwards compatible with
 AmigaOS 3.1, so if you limit to using AmigaOS 3.1 features, that can be reasonably expected to work
 on 3.5 and 3.9. However if you wish to develop features that are part of 3.5 and/or 3.9 but not
 part of 3.2, this may be tricky and you should be prepared to do some work to make it work.
 {{< /faq >}}
 
 {{< faq "Can I build applications for AmigaOS 4?" >}}
-No. AmigaOS 4 uses the PowerPC CPU architecture, and DICE-NX only supports the 68000 CPU
+No. AmigaOS 4 uses the PowerPC CPU architecture, and DICE-nx only supports the 68000 CPU
 architecture.
 {{< /faq >}}
 
 {{< faq "Can I use AmigaOS NDKs other than 3.2?">}}
-DICE-NX currently only officially supports NDK 3.2. This is somewhat of a backwards step as DICE supported multiple simultaneous NDK versions, but it was faster to support AmigaOS 3.2 by dropping
+DICE-nx currently only officially supports NDK 3.2. This is somewhat of a backwards step as DICE supported multiple simultaneous NDK versions, but it was faster to support AmigaOS 3.2 by dropping
 compatibility for the earlier NDKs.
 
 I hope to be able to restore official support for NDK versions 1.3, 2.0, 3.0 and 3.1 in the future. In the mean time, you may still be able to use the earlier NDKs if you install them manually, but consider that an experts-only option.

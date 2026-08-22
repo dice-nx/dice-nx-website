@@ -1,6 +1,6 @@
 baseURL = 'https://dice-nx.dev/'
 languageCode = 'en-us'
-title = 'DICE-NX'
+title = 'DICE-nx'
 theme = "dice-nx-hi"
 relativeURLS = true
 

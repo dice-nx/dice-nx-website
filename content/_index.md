@@ -7,7 +7,7 @@ weight = 10
 +++
 
 {{< hero left-button-caption="Get Started" left-button-link="get-started.md" right-button-caption="Learn More" right-button-link="about.md" >}}
-DICE-NX is a C&nbsp;compiler suite for Commodore&nbsp;Amiga computers and for Motorola&nbsp;68000-based embedded&nbsp;systems.
+DICE-nx is a C&nbsp;compiler suite for Commodore&nbsp;Amiga computers and for Motorola&nbsp;68000-based embedded&nbsp;systems.
 {{< /hero >}}
 
 {{< feature-grid >}}

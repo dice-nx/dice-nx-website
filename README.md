@@ -1,4 +1,4 @@
-DICE-NX website
+DICE-nx website
 ===============
 
 Initial setup:

@@ -1,7 +1,7 @@
 {
   "name": "dice-nx-website",
   "version": "1.0.0",
-  "description": "DICE-NX project website",
+  "description": "DICE-nx project website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

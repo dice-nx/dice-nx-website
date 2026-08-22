@@ -1,7 +1,7 @@
-name = 'DICE-NX-hi'
+name = 'DICE-nx-hi'
 license = 'BSD'
 licenselink = 'https://opensource.org/license/bsd-3-clause'
-description = 'DICE-NX high tech theme'
+description = 'DICE-nx high tech theme'
 
 # The home page of the theme, where the source can be found
 homepage = 'https://github.com/dice-nx/dice-nx-website/themes/dice-nx-hi'
