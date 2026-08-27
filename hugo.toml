@@ -4,6 +4,9 @@ title = 'DICE-nx'
 theme = "dice-nx-hi"
 relativeURLS = true
 
+[params]
+downloadURL = "https://github.com/dice-nx/dice-nx/releases/download/3.20.0/DICE-nx-3.20.0.lha"
+
 [permalinks]
 posts = "/news/:year/:title/"
 

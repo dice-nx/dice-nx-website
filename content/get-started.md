@@ -5,7 +5,7 @@ weight = 30
 layout = 'content'
 +++
 
-{{< big-button caption="Download Latest DICE-nx Release" url="https://get.dice-nx.dev/latest.lha" >}}
+{{< big-button caption="Download Latest DICE-nx Release" >}}
 
 
 ## What you'll need
