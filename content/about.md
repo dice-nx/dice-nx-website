@@ -1,5 +1,4 @@
 +++
-draft = true
 title = 'About DICE-nx'
 menu = { main = { name = "About", weight = 20 } }
 layout = 'content'

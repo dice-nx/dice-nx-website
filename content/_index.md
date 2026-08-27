@@ -1,6 +1,5 @@
 +++
 date = '2024-12-02T22:24:28Z'
-draft = true
 title = 'Home'
 menu = 'main'
 weight = 10

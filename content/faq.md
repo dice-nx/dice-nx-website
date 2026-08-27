@@ -1,5 +1,4 @@
 +++
-draft = true
 title = 'FAQ'
 menus = 'main'
 weight = 40

@@ -1,5 +1,4 @@
 +++
-draft = true
 title = 'Get Started'
 menu = 'main'
 weight = 30
@@ -68,3 +67,16 @@ Using Workbench, open up the location where you unpacked the DICE-nx package. Do
 ## Installing an NDK
 
 If you have the AmigaOS NDK 3.2, then the installer script will offer to install the NDK for you - choose this option and follow the on-screen instructions.
+
+
+## Give it a spin
+
+After a quick reboot, open a Shell, and you should be able to exec `dcc`, the DICE-nx frontend.
+
+Give it a try with one of the example programs:
+
+```
+cd DCC:Examples/Hello
+dcc hello.c
+hello
+```
